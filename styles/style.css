@@ -63,7 +63,7 @@ body {
 }
 
 .presentacion {
-    background-image: url("/hernanhenaoweb/assets/perfilprueba.png");
+    background-image: url("/assets/perfilprueba.png");
     background-size: cover;
     width: auto;
      display: flex; 
