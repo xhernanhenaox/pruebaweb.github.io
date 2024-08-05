@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --color-primario:#1A3636;
+    --color-secundario:#D8EFD3;
+    --color-terciario: #ffffff;
+    --fuente-space: "Space Mono", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+    box-sizing: border-box;
+    font-family: var(--fuente-space);
+}
+
+.header {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    padding: 2% 5% 2% 5%;
+    box-shadow: 0 6px 10px rgb(0, 0, 0);
+    position: relative;
+    z-index: 1000;
+    }
+
+.header_menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        gap: 60px;
+        }
+
+.header_menu_link {
+    font-family:var(--fuente-space);
+    font-size: 16px;
+    color: var(--color-secundario);
+    text-decoration: none;
+    justify-content: center;
+    
+}
+
+.header_contacto {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.header_menu_link:hover {
+    text-shadow: 0 2px 8px rgb(255, 255, 255);
+    color: #beabab;
+}
+
+.header_menu_link.active {
+    font-weight: bold;
+    color: var(--color-secundario);
+    text-shadow: 0 2px 8px rgba(255, 255, 255, 0.548);
+}
+
+.presentacion {
+    background-image: url("/hernanhenaoweb/assets/perfilprueba.png");
+    background-size: cover;
+    width: auto;
+     display: flex; 
+    align-items: flex-start;
+    padding: 5% 5% 0% 5%;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+}
+
+.pefilhome {
+    align-self: flex-end; 
+    max-width: 100%; 
+    height: auto;
+}
+
+.presentacion_contenido {
+    align-items: center;
+    font-size: 18px;
+    width: 40%;
+    padding: 5% 10% 0% 10%;
+}
+
+
+.presentacion_titulo {
+    font-size: 58px;
+}
+
+.boton_whatsapp {
+    right: auto;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.footer {
+    background-color: black;
+    color: var(--color-primario);
+    font-size: 14px;
+    display:flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 2% 5% 2% 5%;
+    }
+
+.presentacion_redes {
+    padding: 5px;
+    width: 5%;
+    display: flex;
+    gap: 10px;
+    }
+
+    /* ESTILOS SOBRE MI ---------------------------------------------------------------------------*/ 
+
+  
+.presentacion_sobreMi{
+    background-color: var(--color-terciario);
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 5% 5% 3% 5%;   
+    justify-content: center;
+    flex-direction: row;
+    gap: 100px;
+   }
+
+.presentacion_contenido_sobremi{
+    font-size: 18px;
+    width: 80%;
+    text-align: justify;
+   }
+
+.presentacion_titulo_sobremi{
+    font-family: var(--fuente-space);
+    font-size: 42px;
+
+   }
+
+.presentacion_descargar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 5% 5% 5%;
+}
+
+.presentacion_descargarhv{
+    align-items: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none;
+    border-radius: 36px;
+    color: #1A3636;
+    border: 2px solid var(--color-primario);
+    width: 350px;
+    height: auto;
+    padding: 10px 10px ;
+    gap: 20px;
+    font-weight: 500;
+    }
+
+    .presentacion_formacion_academica{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px;
+        gap: 20px;
+        background-color: var(--color-secundario);
+        color: var(--color-primario);
+    }
+
+    .presentacion_formacion_academica ul{
+        list-style-type:circle;
+    }
+
+    .presentacion_habilidades {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        
+    }
+    
+    .competenciasyhabilidades, .habilidades_ofimaticas {
+        width: 40%; /* Ajusta el ancho según tu necesidad */
+        padding: 50px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.247); /* Opcional para darle sombra */
+        border-radius: 16px; /* Opcional para bordes redondeados */
+    }
+    
+    .competenciasyhabilidades ul, .habilidades_ofimaticas ul {
+        list-style-type: disc;
+        margin: 0;
+        padding-left: 20px;
+    }
+    
+    h2 {
+        margin-top: 0;
+    }
+
+  
+    .presentacion_experiencia{
+        padding: 20px 50px 20px 50px;
+        background-color: var(--color-secundario);
+        color: var(--color-primario);
+        text-align: justify;
+    }
+
+    /* ESTILOS SERVICIOS ---------------------------------------------------------------------------*/
+
+.presentacion_introduccion_servicios {
+    padding: 20px 50px 20px 50px;
+    text-align: justify;
+    gap: 20px;
+    flex-direction: column;
+    display:flex;
+    align-items: start;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+
+
+}
+
+.presentacion_contactame{
+    text-align: center;
+}
+
+.presentacion_asesoria{
+    padding: 20px 50px 20px 50px;
+    text-align: justify;
+    gap: 20px;
+    flex-direction: column;
+    display:flex;
+    align-items: start;
+}
+
+.presentacion_programas {
+    padding: 20px 50px;
+    text-align: justify;
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    border-radius: 16px;
+    }
+
+.presentacion_ademas{
+     padding:20px 50px;
+    }
+
+.presentacion_disenoypublicidad {
+    padding: 20px 50px;
+    gap: 20px;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    background-image: url("/hernanhenaoweb/assets/fondoservicios.jpg");
+    }
+
+.diseño {
+    color: rgb(0, 0, 0);
+    text-shadow: 0 2px 8px rgb(255, 255, 255);
+    
+ }
+.presentacion_disenoypublicidad_servicios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 50px;
+    text-align:initial;
+     }
+
+.servicios{
+    padding: 20px 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.507);
+    border-radius: 30px;
+    gap: 60px;
+    background-color: black;
+    }
+
+/* ESTILOS PROYECTOS ---------------------------------------------------------------------------*/
+
+    .presentacion_proyectos {
+        padding: 20px 50px;
+        gap: 20px;
+        background-color: var(--color-secundario);
+        color: var(--color-primario);
+    }
+    
+    .presentacion_proyectos_contenido {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        align-items: center;
+        gap: 50px;
+        text-align: initial;
+    }
+    
+    .hhpsicologia, .global {
+        padding: 20px 50px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.507);
+        border-radius: 30px;
+        gap: 20px; /* Ajustado para consistencia */
+        background-color: rgb(255, 255, 255);
+        color: var(--color-primario);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
+    }
+    
+    .global {
+        background-color: black;
+        color: var(--color-terciario);
+    }
+
+ /* ESTILOS  BLOG ---------------------------------------------------------------------------*/
+
+ .presentacion_blog {
+    color: var(--color-primario);
+    padding: 50px 50px 50px 50px;
+    }
+
+.post {
+    padding: 30px 30px 30px 30px;
+    gap: 50px;      
+    
+}
+
+
+/* ESTILOS CONTACTO ---------------------------------------------------------------------------*/
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        padding: 50px 50px 50px 50px;
+    }
+    
+    label {
+        font-size: 1.2em;
+    }
+    
+    input, textarea, button {
+        width: 40%;
+        padding: 0.5em;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    button {
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 0.7em;
+    }
+    
+    button:hover {
+        background-color: #555;
+    }
+    
+@media (max-width: 958px) {
+        .header_menu {
+            flex-direction: column;
+            gap: 20px;
+        }
+    
+        .header_contacto {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .presentacion {
+            flex-direction:column;
+            padding: 5% 5% 0% 5%;
+            align-items: center;
+            justify-content: flex-end;
+            background-size: cover;
+            width: auto;
+            display: flex; 
+            justify-content: space-between;
+            gap: 50px;
+            position: relative;
+        }
+    
+        .presentacion_contenido {
+            width: auto;
+            padding: 5% 5% 0% 5%;
+            text-align: center; 
+        }
+
+     
+           
+        .presentacion_sobreMi {
+            flex-direction: column;
+            gap: 20px;
+            padding: 5%;
+        }
+    
+        .presentacion_contenido_sobremi {
+            width: 100%;
+            padding: 5%;
+        }
+    
+        .presentacion_formacion_academica {
+            grid-template-columns: 1fr;
+            padding: 5%;
+        }
+    
+        .presentacion_habilidades {
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+    
+        .competenciasyhabilidades, .habilidades_ofimaticas {
+            width: 100%;
+            padding: 20px;
+        }
+    
+        .presentacion_experiencia, .presentacion_introduccion_servicios, .presentacion_asesoria, .presentacion_programas, .presentacion_ademas, .presentacion_disenoypublicidad, .presentacion_proyectos, .presentacion_blog, form {
+            padding: 10%;
+        }
+    
+        .presentacion_disenoypublicidad_servicios, .presentacion_proyectos_contenido {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    
+        input, textarea, button {
+            width: 100%;
+        }
+    }
+    
+   
